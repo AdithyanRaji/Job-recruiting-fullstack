@@ -1,0 +1,24 @@
+<div class="border-bottom row shadow-sm p-3 mb-5 bg-body-tertiary rounded" style="margin-bottom:16px; padding-bottom:8px;">
+  <!-- Job Details Column -->
+  <div class="col-10">
+    <h4 style="color: rgb(120, 120, 120); margin-bottom: 4px;">
+      {{ job['title'] }}
+    </h4>
+    <div>
+      <b>Location:</b> {{ job['location'] }}
+    </div>
+    <div>
+      <b>Salary:</b> {{ job['salary'] }}
+    </div>
+  </div>
+
+  <!-- Apply Button Column -->
+  <div class="col-2 text-end">
+    <a href="mailto:partharecruiters12@gmail.com?subject=Application%20For%20{{job['title']}}&body=MY%20NAME%3A%20%3Cyour_name%3E%0D%0A%0D%0ARESUME%20LINK%3A%20%3Cyour_resume%20link%3E%0D%0A%0D%0ALINKEDIN%20LINK%3A%20your_linkedin%20link%3E"
+   class="btn btn-secondary btn-sm">
+   APPLY
+</a>
+
+  </div>
+</div>
+
